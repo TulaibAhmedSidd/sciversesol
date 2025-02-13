@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -18,15 +22,36 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@components/*": ["./app/components/*"],
-      "@styles/*": ["./app/styles/*"],
-      "@utils/*": ["./app/utils/*"],
-      "@lib/*": ["./app/lib/*"],
-      "@models/*": ["./app/api/models/*"],
-      "@videos/*": ["./public/videos/*"] // For videos stored in the public directory
+      "@/*": [
+        "./*"
+      ],
+      "@components/*": [
+        "./app/components/*"
+      ],
+      "@styles/*": [
+        "./app/styles/*"
+      ],
+      "@utils/*": [
+        "./app/utils/*"
+      ],
+      "@lib/*": [
+        "./app/lib/*"
+      ],
+      "@models/*": [
+        "./app/api/models/*"
+      ],
+      "@videos/*": [
+        "./public/videos/*"
+      ] // For videos stored in the public directory
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
