@@ -1,0 +1,131 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay for text visibility */
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  z-index: 1;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  padding-right: 40px;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  z-index: 2; /* Ensure text is above the overlay */
+  animation: fadeIn 0.7s ease-in-out;
+
+  
+}
+
+.caption h2 {
+  font-size: 2rem;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+}
+
+.caption p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.learnMore {
+  background-color: #ffc107;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.learnMore:hover {
+  background-color: #0e185f;
+}
+
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End in normal position */
+  }
+}
+
+/* Indicators */
+.indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3; /* Ensure indicators are visible above slides */
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: white;
+}
+/* Custom animation for caption */
+.captionAnimation {
+  animation: slideIn 0.7s ease-in-out;
+}
+
+/* Fade-in animation for smoother transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

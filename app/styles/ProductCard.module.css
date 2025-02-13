@@ -1,0 +1,141 @@
+/* Container Styling for the Product Card */
+.productCard {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover Effect */
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.productCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover img {
+  transform: scale(1.05);
+}
+
+/* Product Name */
+.productCard h3 {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.productCard:hover h3 {
+  color: #0e185f;
+}
+
+/* Product Details */
+.productCard p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Price Styling */
+.productCard .price {
+  font-size: 1.2rem;
+  color: #0e185f;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* Cart Controls Container */
+.cartControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Quantity Buttons */
+.cartControls button {
+  background-color: #0e185f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.cartControls button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.cartControls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Quantity Display */
+.cartControls span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .productCard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .productCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .productCard p {
+    font-size: 0.9rem;
+  }
+
+  .productCard .price {
+    font-size: 1rem;
+  }
+
+  .cartControls button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .cartControls span {
+    font-size: 1rem;
+  }
+}

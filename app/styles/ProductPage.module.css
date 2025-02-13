@@ -1,0 +1,144 @@
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .productCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .productCard button {
+    background-color: #0e185f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .productCard button:hover {
+    background-color: #0e185f;
+  }
+  
+  .cartButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #FFC107;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+
+
+/* Product Categories Wrapper */
+.productCategories {
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+  }
+  
+  /* Title for Product Categories */
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* color: #333; */
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 100px;
+    height: 4px;
+    background-color: #fff000;
+    border-radius: 2px;
+  }
+  
+  /* Individual Category Section */
+  .categorySection {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .categoryTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0e185f;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0e185f;
+    width: max-content;
+    padding-bottom: 5px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  /* Product List Grid */
+  .productList {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    display: flex;
+
+    gap: 20px;
+
+  }
+  
+  /* Product Card Styling */
+  .productCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .productCard h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .productCard p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .productCard button {
+    background-color: #0e185f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .productCard button:hover {
+    background-color: #0e185f;
+  }
+  

@@ -1,0 +1,118 @@
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4caf50;
+    color: white;
+    position: sticky; /* Keeps the header visible while scrolling */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a sleek look */
+  }
+  
+  /* Logo styles */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Navbar menu container */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adds consistent spacing between items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar items */
+  .navbar li {
+    position: relative; /* For potential dropdowns or highlights */
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ffc107; /* Highlight on hover */
+  }
+  
+  /* CTA button styling */
+  .cta {
+    background-color: #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta:hover {
+    background-color: #e0a806;
+    transform: scale(1.05); /* Adds a hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* Stack items vertically */
+      background-color: #4caf50;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      display: none; /* Hidden by default */
+    }
+  
+    .navbar ul.show {
+      display: flex; /* Display on toggle */
+    }
+  
+    .navbar li {
+      text-align: center;
+      margin: 10px 0; /* Add spacing between stacked items */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .cta {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+  }
+  /* Menu Toggle Button */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Show toggle button on smaller screens */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .navList {
+    display: none; /* Hidden by default */
+  }
+
+  .navList.show {
+    display: flex; /* Show menu when toggled */
+    flex-direction: column;
+  }
+}

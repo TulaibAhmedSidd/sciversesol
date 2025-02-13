@@ -1,0 +1,97 @@
+/* styles/Button.module.css */
+
+/* Base Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* In case used for links */
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Filled Button Styles */
+  .button.filled {
+    color: white;
+    background-color: #4caf50;
+    border: none;
+  }
+  
+  .button.filled:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button.filled:active {
+    background-color: #3e8e41;
+  }
+  
+  /* Outlined Button Styles */
+  .button.outlined {
+    color: #4caf50;
+    background-color: transparent;
+    border: 2px solid #4caf50;
+  }
+  
+  .button.outlined:hover {
+    background-color: #4caf50;
+    color: white;
+    border: 2px solid #4caf50;
+  }
+  
+  .button.outlined:active {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  /* Size Variants */
+  .button.small {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .button.medium {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .button.large {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .button.small {
+      font-size: 0.75rem;
+      padding: 5px 10px;
+    }
+  
+    .button.medium {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .button.large {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

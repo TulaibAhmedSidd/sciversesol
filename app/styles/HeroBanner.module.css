@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  height: 100vh; /* Adjust based on your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.heroContent {
+  z-index: 1;
+  padding: 20px;
+  max-width: 80%;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 1.5rem;
+  }
+  .heroButtons{
+    margin-top: 100px;
+  }
+}
+.heroButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heroButtons a {
+  padding: 12px 24px;
+  background-color: #ffc107;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.heroButtons a:hover {
+  background-color: #ff9800;
+  transition: background-color 0.3s;
+}

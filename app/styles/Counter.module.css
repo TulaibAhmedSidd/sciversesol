@@ -1,0 +1,61 @@
+/* Counter.module.css */
+
+.counterContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.counterItem {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 15px; /* Add margin for spacing */
+  flex: 1 1 200px; /* Make items responsive and adjust their width */
+  text-align: center;
+}
+
+.counterCount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0e185f; /* Green color for the counter */
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+}
+
+.counterLabel {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.counterItem h2:hover {
+  color: #ffc107; /* Change color on hover */
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+  .counterContainer {
+    flex-direction: column;
+    padding: 20px; /* Less padding on mobile */
+    align-items: stretch; /* Stretch the counter items */
+  }
+
+  .counterItem {
+    font-size: 1.5rem; /* Slightly smaller font size for mobile */
+    margin: 10px 0; /* Adjust margins for mobile */
+  }
+
+  .counterCount {
+    font-size: 2.5rem; /* Adjust header font size for mobile */
+  }
+
+  .counterLabel {
+    font-size: 1.2rem; /* Adjust label font size for mobile */
+  }
+}

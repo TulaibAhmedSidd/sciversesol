@@ -1,0 +1,123 @@
+/* Card container */
+.card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 650px;
+  margin: 25px auto;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan title */
+.planTitle {
+  font-size: 30px;
+  color: #3C40C6; /* A vibrant blue for the title */
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Plan description */
+.planDescription {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* Plan price */
+.planPrice {
+  font-size: 24px;
+  color: #0e185f; /* A dark blue for pricing */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Section titles (e.g., Included Equipment, Can Power) */
+.sectionTitle {
+  font-size: 20px;
+  color: #495057;
+  margin-bottom: 12px;
+  font-weight: 600;
+  border-bottom: 2px solid #3C40C6;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+/* List styling for equipment and appliances */
+.equipment ul, .applianceSetup ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+
+.equipment li, .applianceSetup li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.equipment li:before, .applianceSetup li:before {
+  content: '•';
+  color: #3C40C6; /* Accent bullet color */
+  font-size: 20px;
+}
+
+/* Buttons styling */
+.quoteButton, .whatsappButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #3C40C6; /* Button color */
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.quoteButton:hover, .whatsappButton:hover {
+  background-color: #0e185f;
+  transform: translateY(-3px);
+}
+
+.whatsappButton {
+  background-color: #25D366;
+}
+
+.whatsappButton:hover {
+  background-color: #128C7E;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .card {
+      padding: 20px;
+      margin: 15px;
+  }
+
+  .planTitle {
+      font-size: 26px;
+  }
+
+  .planDescription, .planPrice {
+      font-size: 15px;
+  }
+
+  .quoteButton, .whatsappButton {
+      font-size: 15px;
+      padding: 12px;
+  }
+}
