@@ -30,14 +30,14 @@ export default function Home() {
       <Testimonial />
       <Team />
 
-      <div className=" text-center w-full flex justify-center my-[50px]">
+      <div className=" text-center w-full flex justify-center my-[100px]">
         <img
           src="/images/biglogo.png"
           alt="Sciverse "
           className="bottom-logo w-auto h-auto max-w-full px-5"
         />
       </div>
-      <ReqConsultation />
+      {/* <ReqConsultation /> */}
     </>
   );
 }
