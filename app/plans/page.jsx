@@ -7,10 +7,10 @@ import { checkArrNull } from "../utils/helperFunc"
 import Loading from '../components/Loading'
 // const plans = [
 //   {
-//     name: '5KW Solar Plan',
+//     name: '5KW  Plan',
 //     price: 6000,
 //     equipment: [
-//       { name: 'Solar Panels', quantity: 15, price: 3000 },
+//       { name: ' Panels', quantity: 15, price: 3000 },
 //       { name: 'Inverter', quantity: 1, price: 1200 },
 //       { name: 'Battery', quantity: 1, price: 800 },
 //       { name: 'Mounting Structures', quantity: 1, price: 500 },
@@ -26,10 +26,10 @@ import Loading from '../components/Loading'
 //     }
 //   },
 //   {
-//     name: '10KW Solar Plan',
+//     name: '10KW  Plan',
 //     price: 10000,
 //     equipment: [
-//       { name: 'Solar Panels', quantity: 25, price: 5000 },
+//       { name: ' Panels', quantity: 25, price: 5000 },
 //       { name: 'Inverter', quantity: 1, price: 1800 },
 //       { name: 'Battery', quantity: 1, price: 1000 },
 //       { name: 'Mounting Structures', quantity: 1, price: 700 },
@@ -45,10 +45,10 @@ import Loading from '../components/Loading'
 //     }
 //   },
 //   {
-//     name: '20KW Solar Plan',
+//     name: '20KW  Plan',
 //     price: 18000,
 //     equipment: [
-//       { name: 'Solar Panels', quantity: 50, price: 10000 },
+//       { name: ' Panels', quantity: 50, price: 10000 },
 //       { name: 'Inverter', quantity: 1, price: 2500 },
 //       { name: 'Battery', quantity: 2, price: 1600 },
 //       { name: 'Mounting Structures', quantity: 1, price: 1000 },
@@ -90,7 +90,7 @@ export default function Plans() {
   return (
     <div className={styles.container+' min-h-[70vh]' }>
       <div className='bg_space_for_title'>
-        <h1 className={styles.title + " lightcolor"}>Our Solar Plans</h1>
+        <h1 className={styles.title + " lightcolor"}>Our  Plans</h1>
       </div>
       <div className=' p-3'>
         <Alert

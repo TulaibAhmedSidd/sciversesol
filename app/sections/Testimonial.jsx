@@ -4,24 +4,6 @@ import styles from "../styles/Home.module.css";
 import axios from 'axios';
 import Loading from '../components/Loading';
 
-// const testimonials = [
-//     {
-//         text: "Volton Solar changed the way we think about energy. The installation was seamless and efficient!",
-//         author: "Kashif Basheer",
-//     },
-//     {
-//         text: "Excellent customer service and high-quality panels. Highly recommended!",
-//         author: "Mehwish Ali",
-//     },
-//     {
-//         text: "The team was professional, and the solar solution has significantly reduced my energy bills.",
-//         author: "Ahmed Khan",
-//     },
-//     {
-//         text: "Great experience from consultation to installation. A top-notch solar service!",
-//         author: "Fatima Noor",
-//     },
-// ];
 const Testimonial = () => {
     const [testimonials, setTestimonials] = useState([]);
     const [loading, setLoading] = useState(false);

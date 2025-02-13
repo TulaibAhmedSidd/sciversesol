@@ -13,7 +13,7 @@ export default function Footer() {
           <p>Phone 1: +92 303 2115055</p>
           <p>Phone 2: +92 314 1356095</p>
           <p>Phone 3: +92 312 1834695</p>
-          <p>Email: <a href="mailto:voltonsolar@gmail.com">voltonsolar@gmail.com</a></p>
+          <p>Email: <a href="mailto:Sciverse@gmail.com">Sciverse@gmail.com</a></p>
         </div>
 
         {/* Navigation Links */}
@@ -41,7 +41,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className={styles.footerBottom}>
-        <p>&copy; 2022 VOLTON SOLAR. All rights reserved.</p>
+        <p>&copy; 2022 Sciverse . All rights reserved.</p>
       </div>
     </footer>
   );

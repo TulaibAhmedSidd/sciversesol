@@ -7,30 +7,30 @@ const CustomCarousel = () => {
     const slides = [
         {
             image: "https://s3.amazonaws.com/se-website-assets/img-v5/banner5.jpg",
-            title: "A Solar Solution for All Markets Across The Globe",
+            title: "A  Solution for All Markets Across The Globe",
             description:
-                "We provide uninterrupted solar power to homes and businesses, tackling load-shedding while reducing energy costs.",
+                "We provide uninterrupted  power to homes and businesses, tackling load-shedding while reducing energy costs.",
             link: "/contact/",
         },
         {
             image: "https://s3.amazonaws.com/se-website-assets/img-v5/banner3.jpg",
-            title: "Solar Installation Services",
+            title: " Installation Services",
             description:
-                "Professional installation of solar panels, inverters, and batteries tailored to your specific needs.",
+                "Professional installation of  panels, inverters, and batteries tailored to your specific needs.",
             link: "/services/installation/",
         },
         {
             image: "https://s3.amazonaws.com/se-website-assets/img-v5/banner2.jpg",
             title: "24/7 Online Consultation",
             description:
-                "Our experts are available round the clock to assist with your solar energy queries and provide customized solutions.",
+                "Our experts are available round the clock to assist with your  energy queries and provide customized solutions.",
             link: "/consultation/",
         },
         {
             image: "https://s3.amazonaws.com/se-website-assets/img-v5/banner1.jpg",
-            title: "Solar Product Sales",
+            title: " Product Sales",
             description:
-                "Explore our range of high-quality solar panels, inverters, batteries, and other solar accessories.",
+                "Explore our range of high-quality  panels, inverters, batteries, and other  accessories.",
             link: "/products/",
         },
     ];
@@ -87,9 +87,6 @@ const CustomCarousel = () => {
                             <div
                                 className={`${styles.caption} ${isAnimating ? styles.captionAnimation : ""
                                     }`} // Add animation class
-                                // className={`${styles.caption} `} // Add animation class
-                                // data-aos="fade-up" // AOS animation for text
-                                // data-aos-delay="300" // Delay for smoother animations
                                 id={slide.title}
                             >
                                 <h2>{slide.title}</h2>

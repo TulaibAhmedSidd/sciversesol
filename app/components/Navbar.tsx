@@ -54,7 +54,7 @@
 
 //   return (
 //     <header className={styles.header}>
-//       <div className={styles.logo}>VOLTON SOLAR</div>
+//       <div className={styles.logo}>Sciverse </div>
 //       <button className={styles.menuToggle} onClick={toggleMenu}>
 //         ☰
 //       </button>
@@ -204,11 +204,11 @@ export default function Navbar() {
         }}
       >
         <img
-          src="/images/voltonLogo.png"
-          alt="VOLTON SOLAR"
+          src="/images/SciverseLogo.png"
+          alt="Sciverse "
           className="logoCss"
         />
-        {/* VOLTON SOLAR */}
+        {/* Sciverse  */}
       </div>
       <div
         className={styles.menuToggle}

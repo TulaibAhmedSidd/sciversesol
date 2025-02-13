@@ -19,8 +19,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "VOLTON SOLAR",
-  description: "VOLTON SOLAR",
+  title: "Sciverse ",
+  description: "Sciverse ",
 };
 
 export default function RootLayout({

@@ -54,7 +54,7 @@ export default Button;
 
 //   return (
 //     <div>
-//       <h1>Welcome to Volton Solar!</h1>
+//       <h1>Welcome to Sciverse !</h1>
 
 //       <Button variant="filled" size="large" onClick={handleClick}>
 //         Get Started

@@ -7,11 +7,11 @@ const HeroBanner = () => {
   const [currentText, setCurrentText] = useState(0);
 
   const texts = [
-    "Powering a Brighter Future with Solar Energy!",
+    "Powering a Brighter Future with  Energy!",
     "Sustainable, Reliable, and Cost-Effective Energy Solutions for Homes and Businesses.",
-    "Join the Green Energy Revolution with VOLTON SOLAR!",
+    "Join the Green Energy Revolution with Sciverse !",
     "Reduce Your Carbon Footprint, One Panel at a Time.",
-    "Efficient Solar Solutions, Tailored to Your Needs.",
+    "Efficient  Solutions, Tailored to Your Needs.",
   ];
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const HeroBanner = () => {
   }, []);
 
   const handleWhatsAppRedirect = () => {
-    const message = `Hello, I want to know more about Solar Panels.`;
+    const message = `Hello, I want to know more about  Panels.`;
 
     // Encode the message and create the WhatsApp URL
     const encodedMessage = encodeURIComponent(message);
@@ -62,7 +62,7 @@ const HeroBanner = () => {
         loop
         muted
       >
-        <source src="/video/solar-video.mp4" type="video/mp4" />
+        <source src="/video/-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

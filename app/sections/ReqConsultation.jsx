@@ -7,7 +7,7 @@ const ReqConsultation = () => {
     const { whatsAppNumber } = useAppSelector((state) => state?.auth);
 
     const handleWhatsAppRedirect = () => {
-        const message = `Hello, I want to know more about Solar Panels.`;
+        const message = `Hello, I want to know more about  Panels.`;
 
         // Encode the message and create the WhatsApp URL
         const encodedMessage = encodeURIComponent(message);
@@ -20,7 +20,7 @@ const ReqConsultation = () => {
     return (
         <section id="cta" className={styles.cta}>
             <h2 className="fancy-heading">
-                Ready to Go Solar? Start Saving Today!
+                Ready to Go ? Start Saving Today!
             </h2>
             <br />
             <br />

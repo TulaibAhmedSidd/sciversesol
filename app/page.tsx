@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>VOLTON SOLAR</title>
+        <title>Sciverse </title>
         <meta
-          name="description"
-          content="Renewable energy solutions by Volton Solar"
+          name="Sciverse"
+          content="A Software company for all tech solution "
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -29,8 +29,8 @@ export default function Home() {
       <Testimonial />
       <div className=" text-center w-full flex justify-center my-[50px]">
         <img
-          src="/images/voltonLogoBlack.png"
-          alt="VOLTON SOLAR"
+          src="/images/SciverseLogoBlack.png"
+          alt="Sciverse "
           className="BottomLogo"
         />
       </div>

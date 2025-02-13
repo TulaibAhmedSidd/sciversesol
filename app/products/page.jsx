@@ -18,10 +18,10 @@ import RefreshButton from '../components/RefreshButton';
 //     category: "Inverters",
 //     items: [
 //       {
-//         id: 1, name: "Inverter A", brand: "Brand 1", wattage: "1000W", size: "Compact", price: 500, image: 'https://i0.wp.com/www.prostarsolar.net/wp-content/uploads/2024/03/PHS10K-48L-PRO-pure-sine-wave-10kw-hybrid-inverter-single-phase-48v.jpg?fit=800%2C800&ssl=1',
+//         id: 1, name: "Inverter A", brand: "Brand 1", wattage: "1000W", size: "Compact", price: 500, image: 'https://i0.wp.com/www.prostar.net/wp-content/uploads/2024/03/PHS10K-48L-PRO-pure-sine-wave-10kw-hybrid-inverter-single-phase-48v.jpg?fit=800%2C800&ssl=1',
 //       },
 //       {
-//         id: 2, name: "Inverter B", brand: "Brand 2", wattage: "2000W", size: "Medium", price: 750, image: 'https://powerhouseexpress.com.pk/cdn/shop/files/solis-8kw-hybrid-solar-inverter-1_352ba362-717d-41f5-b36e-a9abab202e89.jpg?v=1720872885',
+//         id: 2, name: "Inverter B", brand: "Brand 2", wattage: "2000W", size: "Medium", price: 750, image: 'https://powerhouseexpress.com.pk/cdn/shop/files/solis-8kw-hybrid--inverter-1_352ba362-717d-41f5-b36e-a9abab202e89.jpg?v=1720872885',
 //       },
 //       {
 //         id: 3, name: "Inverter C", brand: "Brand 3", wattage: "3000W", size: "Large", price: 1000, image: 'https://www.zamzamstore.com.pk/cdn/shop/files/rn-image_picker_lib_temp_c3c10c39-12db-483c-94a7-e7abf2ba6996.jpg?v=1723988152',
@@ -29,16 +29,16 @@ import RefreshButton from '../components/RefreshButton';
 //     ]
 //   },
 //   {
-//     category: "Solar Panels",
+//     category: " Panels",
 //     items: [
 //       {
-//         id: 4, name: "Solar Panel A", brand: "Brand 1", wattage: "300W", size: "Small", price: 250, image: 'https://solarfield.pk/wp-content/uploads/2024/05/jinko-580-watt-n-type-mono-perc-solar-panel-1200x900.jpg',
+//         id: 4, name: " Panel A", brand: "Brand 1", wattage: "300W", size: "Small", price: 250, image: 'https://field.pk/wp-content/uploads/2024/05/jinko-580-watt-n-type-mono-perc--panel-1200x900.jpg',
 //       },
 //       {
-//         id: 5, name: "Solar Panel B", brand: "Brand 2", wattage: "500W", size: "Medium", price: 400, image: 'https://soherwardiasolar.com/wp-content/uploads/2024/04/jinko-solar.jpg',
+//         id: 5, name: " Panel B", brand: "Brand 2", wattage: "500W", size: "Medium", price: 400, image: 'https://soherwardia.com/wp-content/uploads/2024/04/jinko-.jpg',
 //       },
 //       {
-//         id: 6, name: "Solar Panel C", brand: "Brand 3", wattage: "1000W", size: "Large", price: 600, image: 'https://brightsolar.pk/wp-content/uploads/2024/04/jinko-545-watt-solar-panel-price-in-pakistan.webp',
+//         id: 6, name: " Panel C", brand: "Brand 3", wattage: "1000W", size: "Large", price: 600, image: 'https://bright.pk/wp-content/uploads/2024/04/jinko-545-watt--panel-price-in-pakistan.webp',
 //       },
 //     ]
 //   },
@@ -49,7 +49,7 @@ import RefreshButton from '../components/RefreshButton';
 //         id: 7, name: "Battery A", brand: "Brand 1", size: "12V", wattage: "100Ah", price: 200, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkuLHUqcRFR9OZgzueq97hRhDBirlZYoiBpA&s',
 //       },
 //       {
-//         id: 8, name: "Battery B", brand: "Brand 2", size: "24V", wattage: "150Ah", price: 350, image: 'https://cdn-enhoh.nitrocdn.com/PdbItfiYBBwTfYkgHIiOHKWlqZWDhqoj/assets/images/optimized/rev-fccc78f/www.gcrelectricalsystems.com.au/wp-content/uploads/2022/01/What-Happens-Solar-Power-When-Batteries-Full-scaled.jpg',
+//         id: 8, name: "Battery B", brand: "Brand 2", size: "24V", wattage: "150Ah", price: 350, image: 'https://cdn-enhoh.nitrocdn.com/PdbItfiYBBwTfYkgHIiOHKWlqZWDhqoj/assets/images/optimized/rev-fccc78f/www.gcrelectricalsystems.com.au/wp-content/uploads/2022/01/What-Happens--Power-When-Batteries-Full-scaled.jpg',
 //       },
 //       {
 //         id: 9, name: "Battery C", brand: "Brand 3", size: "48V", wattage: "200Ah", price: 500, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFNYdqHyRjlqomlpspfIWEmDETiKgFEYhEvA&s',
