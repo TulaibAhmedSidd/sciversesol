@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "./styles/Home.module.css";
 import HeroBanner from "@components/HeroBanner.js";
 import ReqConsultation from "./sections/ReqConsultation";
 import CustomCarousel from "@components/CustomCarousel";
@@ -13,9 +12,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sciverse </title>
+        <title>Sciverse Software Solution</title>
         <meta
-          name="Sciverse"
+          name="Sciverse Software Solution"
           content="A Software company for all tech solution "
         />
         <link rel="icon" href="/favicon.ico" />
