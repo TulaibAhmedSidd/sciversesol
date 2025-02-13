@@ -7,11 +7,11 @@ const HeroBanner = () => {
   const [currentText, setCurrentText] = useState(0);
 
   const texts = [
-    "Powering a Brighter Future with  Energy!",
-    "Sustainable, Reliable, and Cost-Effective Energy Solutions for Homes and Businesses.",
-    "Join the Green Energy Revolution with Sciverse !",
-    "Reduce Your Carbon Footprint, One Panel at a Time.",
-    "Efficient  Solutions, Tailored to Your Needs.",
+    "Innovating the Future with Cutting-Edge Software Solutions!",
+    "Building Scalable, Reliable, and Future-Ready Applications.",
+    "Empowering Businesses with Smart and Efficient Technology.",
+    "Transforming Ideas into Reality with Expert Software Development.",
+    "Your Vision, Our Code – Let's Build Something Amazing Together.",
   ];
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const HeroBanner = () => {
         loop
         muted
       >
-        <source src="/video/-video.mp4" type="video/mp4" />
+        <source src="/video/videoss.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

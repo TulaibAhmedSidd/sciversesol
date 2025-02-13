@@ -42,12 +42,12 @@
   }
   
   .navbar a:hover {
-    color: #ffc107; /* Highlight on hover */
+    color: linear-gradient(to right, #1e3a8a, #9333ea); /* Highlight on hover */
   }
   
   /* CTA button styling */
   .cta {
-    background-color: #ffc107;
+    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
     padding: 10px 20px;
     border-radius: 5px;
     color: #333;

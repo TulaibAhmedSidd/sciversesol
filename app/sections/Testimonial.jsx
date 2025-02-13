@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react'
 import styles from "../styles/Home.module.css";
 import axios from 'axios';
 import Loading from '../components/Loading';
+import { constantApp } from '../utils/appConstant';
 
 const Testimonial = () => {
     const [testimonials, setTestimonials] = useState([]);
     const [loading, setLoading] = useState(false);
     useEffect(() => {
-        fetchTestimonials();
+        fetchTestimonials()
     }, []);
 
     const fetchTestimonials = async () => {
@@ -17,8 +18,12 @@ const Testimonial = () => {
             const response = await axios.get("/api/testimonial", {
                 // headers: { "x-is-admin": isAdmin.toString() }, // Admin or user view
             });
-            let approvedTesti = response?.data?.filter((item) => item?.approved == true)
-            setTestimonials(approvedTesti);
+            let approvedTesti = response?.data?.filter((item) => item?.approved == true);
+            if (approvedTesti == [] || approvedTesti?.length <= 0) {
+                setTestimonials(constantApp.testimonial);
+            } else {
+                setTestimonials(approvedTesti);
+            }
         } catch (error) {
             console.error("Error fetching testimonials:", error);
         } finally {

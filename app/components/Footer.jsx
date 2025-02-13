@@ -7,13 +7,16 @@ export default function Footer() {
         {/* Contact Information */}
         <div className={styles.contact}>
           <h4>Contact Us</h4>
-          
 
-          <p>Address: Suit #6, A-137 Block 5, Gulshan e Iqbal, Karachi</p>
-          <p>Phone 1: +92 303 2115055</p>
-          <p>Phone 2: +92 314 1356095</p>
-          <p>Phone 3: +92 312 1834695</p>
-          <p>Email: <a href="mailto:Sciverse@gmail.com">Sciverse@gmail.com</a></p>
+
+          <p>Address: R-13, Gulshan e Iqbal, Karachi</p>
+          <p>Phone 1: +92 305 2504520</p>
+          <p>Phone 2: +92 342 2473270</p>
+          <p>Phone 3: +92 335 9151590</p>
+          <p>Phone 3: +92 348 1333766</p>
+          <p>Phone 3: +92 332 8238048</p>
+          <p>Phone 3: +92 335 2614032</p>
+          <p>Email: <a href="mailto:ahsidtullu@gmail.com">Sciverse@gmail.com</a></p>
         </div>
 
         {/* Navigation Links */}
@@ -21,8 +24,6 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <a href="#about">About Us</a>
           <a href="#services">Services</a>
-          <a href="#faq">FAQ</a>
-          <a href="#blog">Blog</a>
         </div>
 
         {/* Newsletter Subscription */}

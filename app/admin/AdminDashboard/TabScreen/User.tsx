@@ -83,10 +83,10 @@ const UserTabScreen = (props: any) => {
     if (!validateForm()) {
       return;
     }
-    if (!isAdmin) {
-      alert("You are not admin u cannot add");
-      return;
-    }
+    // if (!isAdmin) {
+    //   alert("You are not admin u cannot add");
+    //   return;
+    // }
 
     setLoading(true);
 
@@ -175,11 +175,11 @@ const UserTabScreen = (props: any) => {
           onSubmit={handleAddUser}
           className="space-y-4"
           autoComplete="off"
-          style={{
-            opacity: !isAdmin ? "0.5" : "1",
-            cursor: !isAdmin ? "not-allowed" : "auto",
-            pointerEvents: !isAdmin ? "none" : "auto",
-          }}
+        // style={{
+        //   opacity: !isAdmin ? "0.5" : "1",
+        //   cursor: !isAdmin ? "not-allowed" : "auto",
+        //   pointerEvents: !isAdmin ? "none" : "auto",
+        // }}
         >
           {/* Name Field */}
           <div>
@@ -274,7 +274,7 @@ const UserTabScreen = (props: any) => {
 
           {/* Submit Button */}
           <button
-            disabled={!isAdmin}
+            // disabled={!isAdmin}
             type="submit"
             className="bg-green-600 text-white px-4 py-2 rounded-md mt-4"
           >
@@ -314,7 +314,7 @@ const UserTabScreen = (props: any) => {
                     <td className="p-4">{user?.role}</td>
                     <td className="p-4">
                       <button
-                        disabled={iSTAS(user)}
+                        // disabled={iSTAS(user)}
                         className="bg-blue-500 text-white px-4 py-2 rounded-md mr-1"
                         onClick={() => {
                           setEditMode(true);
@@ -330,12 +330,12 @@ const UserTabScreen = (props: any) => {
                         Edit
                       </button>
                       <button
-                        disabled={
-                          iSTAS(user) ||
-                          deleteload ||
-                          !isAdmin ||
-                          user?.name == loggedname
-                        }
+                        // disabled={
+                        //   iSTAS(user) ||
+                        //   deleteload ||
+                        //   !isAdmin ||
+                        //   user?.name == loggedname
+                        // }
                         className="bg-red-600 text-white px-4 py-2 rounded-md"
                         onClick={() => handleDeleteUser(user?._id)}
                       >

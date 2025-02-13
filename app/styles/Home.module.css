@@ -1,6 +1,5 @@
-
 .cta {
-  background-color: #ffc107;
+  background-color: linear-gradient(to right, #1e3a8a, #9333ea);
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -28,7 +27,7 @@
 .heroButtons a {
   padding: 12px 24px;
   margin: 10px;
-  background-color: #ffc107;
+  background: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   border-radius: 5px;
 }
@@ -70,17 +69,18 @@
 /* Home.module.css */
 .projects {
   padding: 4rem 2rem;
-  background-color: #f9fafb; /* Light background */
+  background-color: #f9fafb;
+  /* Light background */
   text-align: center;
 }
 
 .fancy-heading {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: white !important;
 }
 
 /* Flexbox Gallery */
@@ -88,9 +88,12 @@
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  gap: 1.5rem; /* Spacing between cards */
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
+  gap: 1.5rem;
+  /* Spacing between cards */
 }
 
 /* Card Styling */
@@ -100,19 +103,23 @@
   /* max-width: 300px; Max width for each card */
   /* flex: 1 1 calc(33.33% - 1.5rem); Ensure cards resize */
   display: flex;
-  justify-content: center; /* Center image horizontally */
-  align-items: center; /* Center image vertically */
+  justify-content: center;
+  /* Center image horizontally */
+  align-items: center;
+  /* Center image vertically */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #fff; /* White background */
+  background-color: #fff;
+  /* White background */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 300px;
   width: 300px;
 }
 
 .projectCard:hover {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.05);
+  /* Slight zoom effect */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -127,7 +134,7 @@
 /* Services Section */
 .services {
   padding: 40px;
-  background-color: #0e185f;
+  background-color: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   text-align: center;
 }
@@ -138,9 +145,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 @media (max-width: 768px) {
   .serviceCards {
-  grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
   }
 }
@@ -154,7 +162,7 @@
 }
 
 .card h3 {
-  color: #0e185f;
+  color: linear-gradient(to right, #1e3a8a, #9333ea);
 }
 
 /* Testimonials Section */
@@ -185,14 +193,14 @@
 /* Call-to-Action Section */
 .cta {
   padding: 40px;
-  background-color: #ffc107;
+  background: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   text-align: center;
 }
 
 .ctaButton {
   padding: 12px 24px;
-  background-color: #0e185f;
+  background: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   font-weight: bold;
   border-radius: 5px;

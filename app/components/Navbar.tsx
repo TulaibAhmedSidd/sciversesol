@@ -204,7 +204,7 @@ export default function Navbar() {
         }}
       >
         <img
-          src="/images/SciverseLogo.png"
+          src="/images/logowhite.png"
           alt="Sciverse "
           className="logoCss"
         />
@@ -279,15 +279,6 @@ export default function Navbar() {
             >
               Contact
             </a>
-          </li>
-          <li>
-            <a href="/products">Products</a>
-          </li>
-          <li>
-            <a href="/plans">Plans</a>
-          </li>
-          <li className={styles.cartIcon} onClick={handleCartClick}>
-            🛒 <span className={styles.cartCount}>{distinctItemsCount}</span>
           </li>
           <li
             style={{

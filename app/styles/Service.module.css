@@ -1,76 +1,112 @@
 /* Services Section */
 .services {
-    background-color: #f9f9f9; /* Light grey background for a clean, minimalistic feel */
-    padding: 60px 20px; /* Generous padding for breathing space */
-    text-align: center; /* Center-align text for better visual structure */
-  }
-  
-  /* Section Title */
-  .fancy-heading {
-    font-size: 2.5rem; /* Larger text for emphasis */
-    font-weight: bold; /* Bold to give importance to the heading */
-    color: #2c3e50; /* Darker color for the heading to stand out against the light background */
-    margin-bottom: 30px; /* Adds space below the heading */
-    text-transform: uppercase; /* Makes the text uppercase for a modern, professional feel */
-    letter-spacing: 2px; /* Adds space between letters for a polished look */
-  }
-  
-  /* Service Cards Layout */
+  background-color: #f9f9f9;
+  /* Light grey background for a clean, minimalistic feel */
+  padding: 60px 20px;
+  /* Generous padding for breathing space */
+  text-align: center;
+  /* Center-align text for better visual structure */
+}
+
+/* Section Title */
+.fancy-heading {
+  font-size: 2.5rem;
+  /* Larger text for emphasis */
+  font-weight: bold;
+  /* Bold to give importance to the heading */
+  color: #2c3e50;
+  /* Darker color for the heading to stand out against the light background */
+  margin-bottom: 30px;
+  /* Adds space below the heading */
+  text-transform: uppercase;
+  /* Makes the text uppercase for a modern, professional feel */
+  letter-spacing: 2px;
+  /* Adds space between letters for a polished look */
+}
+
+/* Service Cards Layout */
+.serviceCards {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow items to wrap on smaller screens */
+  justify-content: center;
+  /* Center the items horizontally */
+  gap: 20px;
+  /* Space between the cards */
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
   .serviceCards {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center the items horizontally */
-    gap: 20px; /* Space between the cards */
-    padding: 20px 0;
+    flex-direction: column;
+    /* Stack items in a column for smaller screens */
+    align-items: center;
+    /* Center the items horizontally */
   }
-  
-  @media (max-width: 768px) {
-    .serviceCards {
-      flex-direction: column; /* Stack items in a column for smaller screens */
-      align-items: center; /* Center the items horizontally */
-    }
-  }
-  
-  /* Styling the Individual Cards */
-  .card {
-    background-color: #ffffff; /* White background for contrast */
-    padding: 25px; /* Adequate padding inside the cards */
-    border-radius: 8px; /* Rounded corners for a modern, friendly design */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
-    width: 100%; /* Make the card take full width of the container */
-    max-width: 350px; /* Set a max-width to prevent cards from growing too wide */
-  }
-  
-  .card:hover {
-    transform: translateY(-5px); /* Moves the card up slightly on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increases shadow on hover for emphasis */
-  }
-  
-  /* Card Text and Links */
-  .card h3 {
-    font-size: 1.5rem; /* Medium font size for the card title */
-    font-weight: 600; /* Bold title for emphasis */
-    color: #333; /* Dark color for the title */
-    margin-bottom: 10px; /* Space between title and paragraph */
-  }
-  
-  .card p {
-    font-size: 1rem; /* Smaller font size for description */
-    color: #555; /* Lighter color for the paragraph text */
-    margin-bottom: 15px; /* Space between paragraph and link */
-  }
-  
-  .card a {
-    font-size: 1rem; /* Same font size as paragraph */
-    color: #3498db; /* Blue color for the link to stand out */
-    text-decoration: none; /* Remove underline by default */
-    font-weight: 500; /* Slightly bold for the link */
-    transition: color 0.3s ease; /* Smooth color change on hover */
-  }
-  
-  .card a:hover {
-    color: #2980b9; /* Darker blue on hover for visual feedback */
-    text-decoration: underline; /* Underline the link on hover */
-  }
-  
+}
+
+/* Styling the Individual Cards */
+.card {
+  background-color: #ffffff;
+  /* White background for contrast */
+  padding: 25px;
+  /* Adequate padding inside the cards */
+  border-radius: 8px;
+  /* Rounded corners for a modern, friendly design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transitions for hover effects */
+  width: 100%;
+  /* Make the card take full width of the container */
+  max-width: 350px;
+  /* Set a max-width to prevent cards from growing too wide */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Moves the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  /* Increases shadow on hover for emphasis */
+}
+
+/* Card Text and Links */
+.card h3 {
+  font-size: 1.5rem;
+  /* Medium font size for the card title */
+  font-weight: 600;
+  /* Bold title for emphasis */
+  color: #333;
+  /* Dark color for the title */
+  margin-bottom: 10px;
+  /* Space between title and paragraph */
+}
+
+.card p {
+  font-size: 1rem;
+  /* Smaller font size for description */
+  color: #555;
+  /* Lighter color for the paragraph text */
+  margin-bottom: 15px;
+  /* Space between paragraph and link */
+}
+
+.card a {
+  font-size: 1rem;
+  /* Same font size as paragraph */
+  color: #3498db;
+  /* Blue color for the link to stand out */
+  text-decoration: none;
+  /* Remove underline by default */
+  font-weight: 500;
+  /* Slightly bold for the link */
+  transition: color 0.3s ease;
+  /* Smooth color change on hover */
+}
+
+.card a:hover {
+  color: #2980b9;
+  /* Darker blue on hover for visual feedback */
+  text-decoration: underline;
+  /* Underline the link on hover */
+}

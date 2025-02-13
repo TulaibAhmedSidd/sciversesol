@@ -1,6 +1,7 @@
 .hero {
   position: relative;
-  height: 100vh; /* Adjust based on your design */
+  height: 100vh;
+  /* Adjust based on your design */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,14 +33,17 @@
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
 }
+
 @media (max-width: 768px) {
   .heroContent h1 {
     font-size: 1.5rem;
   }
-  .heroButtons{
+
+  .heroButtons {
     margin-top: 100px;
   }
 }
+
 .heroButtons {
   display: flex;
   justify-content: center;
@@ -48,7 +52,7 @@
 
 .heroButtons a {
   padding: 12px 24px;
-  background-color: #ffc107;
+  background: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -56,6 +60,6 @@
 }
 
 .heroButtons a:hover {
-  background-color: #ff9800;
+  background-color: #9333ea;
   transition: background-color 0.3s;
 }

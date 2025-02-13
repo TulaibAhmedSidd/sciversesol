@@ -9,11 +9,13 @@
   position: fixed;
   z-index: 100;
   width: 100%;
-  transition: background-color 0.3s ease; /* Smooth transition when scrolling */
+  transition: background-color 0.3s ease;
+  /* Smooth transition when scrolling */
 }
 
 .header.scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Dark background when scrolled */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Dark background when scrolled */
 }
 
 .logo {
@@ -38,9 +40,11 @@
 } */
 
 .navbar a {
-  color: white; /* Default link color */
+  color: white;
+  /* Default link color */
   text-decoration: none;
-  transition: color 0.3s ease; /* Smooth color change for links */
+  transition: color 0.3s ease;
+  /* Smooth color change for links */
 }
 
 
@@ -63,10 +67,14 @@
 
 /* Call to action button */
 .cta {
-  background-color: #ffc107;
+  background: linear-gradient(to right, #1e3a8a, #9333ea);
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
+}
+
+.cta:hover {
+  background-color: #9333ea;
 }
 
 /* Cart icon */
@@ -78,7 +86,7 @@
 
 .cartCount {
   font-size: 12px;
-  background-color: #f44336;
+  background: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   border-radius: 50%;
   padding: 2px 8px;
@@ -87,12 +95,14 @@
 
 /* Mobile view styles */
 @media (max-width: 768px) {
+
   /* .navbar {
     display: none;
   } */
   .header {
-    padding: 8px 18px;
+    padding: 12px 18px;
   }
+
   .menuToggle {
     display: block;
   }
@@ -104,7 +114,8 @@
     justify-content: center;
     top: 60px;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background when scrolled */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark background when scrolled */
     width: 100%;
     padding: 10px 20px;
   }

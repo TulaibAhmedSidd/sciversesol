@@ -22,7 +22,7 @@
 .counterCount {
   font-size: 3rem;
   font-weight: bold;
-  color: #0e185f; /* Green color for the counter */
+  color: linear-gradient(to right, #1e3a8a, #9333ea); /* Green color for the counter */
   margin-bottom: 10px;
   transition: color 0.3s ease;
   font-family: "Playwrite HU", cursive;
@@ -35,7 +35,7 @@
 }
 
 .counterItem h2:hover {
-  color: #ffc107; /* Change color on hover */
+  color: linear-gradient(to right, #1e3a8a, #9333ea); /* Change color on hover */
 }
 
 /* Media queries for mobile */

@@ -19,9 +19,9 @@ const ReqConsultation = () => {
 
     return (
         <section id="cta" className={styles.cta}>
-            <h2 className="fancy-heading">
+            <p className="fancy-heading ">
                 Ready to Go ? Start Saving Today!
-            </h2>
+            </p>
             <br />
             <br />
 
@@ -36,7 +36,7 @@ const ReqConsultation = () => {
                 Request a Free Consultation
             </a>
             <br />
-            
+
         </section>
     )
 }

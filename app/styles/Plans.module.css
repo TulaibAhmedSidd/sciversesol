@@ -33,7 +33,7 @@
 
 .card h2 {
   font-size: 28px;
-  color: #0e185f; /* Green for plan title */
+  color: linear-gradient(to right, #1e3a8a, #9333ea); /* Green for plan title */
   margin-bottom: 10px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 button.quoteButton {
-  background-color: #0e185f; /* Green button */
+  background-color: linear-gradient(to right, #1e3a8a, #9333ea); /* Green button */
   color: white;
   padding: 12px 20px;
   border: none;

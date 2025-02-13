@@ -13,7 +13,7 @@
   }
   
   .productCard button {
-    background-color: #0e185f;
+    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
     color: white;
     padding: 10px;
     border: none;
@@ -22,14 +22,14 @@
   }
   
   .productCard button:hover {
-    background-color: #0e185f;
+    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
   }
   
   .cartButton {
     display: inline-block;
     margin-top: 20px;
     padding: 12px;
-    background-color: #FFC107;
+    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -79,9 +79,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color: #0e185f;
+    color: linear-gradient(to right, #1e3a8a, #9333ea);
     margin-bottom: 20px;
-    border-bottom: 2px solid #0e185f;
+    border-bottom: 2px solid linear-gradient(to right, #1e3a8a, #9333ea);
     width: max-content;
     padding-bottom: 5px;
     text-align: left;
@@ -128,7 +128,7 @@
   }
   
   .productCard button {
-    background-color: #0e185f;
+    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -139,6 +139,6 @@
   }
   
   .productCard button:hover {
-    background-color: #0e185f;
+    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
   }
   

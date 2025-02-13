@@ -35,7 +35,7 @@
 /* Plan price */
 .planPrice {
   font-size: 24px;
-  color: #0e185f; /* A dark blue for pricing */
+  color: linear-gradient(to right, #1e3a8a, #9333ea); /* A dark blue for pricing */
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -89,7 +89,7 @@
 }
 
 .quoteButton:hover, .whatsappButton:hover {
-  background-color: #0e185f;
+  background-color: linear-gradient(to right, #1e3a8a, #9333ea);
   transform: translateY(-3px);
 }
 

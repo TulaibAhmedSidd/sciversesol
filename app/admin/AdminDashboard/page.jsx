@@ -29,51 +29,51 @@ const AdminDashboard = () => {
 
       {/* Tabs Navigation */}
       <div className="flex flex-col mb-6 flex-wrap justify-evenly gap-1 align-top w-full md:flex-row">
-        <button
+        {/* <button
           onClick={() => setActiveTab('categories')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'categories' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'categories' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
         >
           Product Categories
-        </button>
-        <button
+        </button> */}
+        {/* <button
           onClick={() => setActiveTab('brands')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'brands' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'brands' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
         >
           Brands
         </button>
         <button
           onClick={() => setActiveTab('products')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'products' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'products' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
         >
           Products
-        </button>
-        <button
+        </button> */}
+        {/* <button
           onClick={() => setActiveTab('plan')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'plan' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'plan' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
         >
           Plan
-        </button>
+        </button> */}
         <button
           onClick={() => setActiveTab('users')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'users' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'users' ? 'bg-blue-900' : 'bg-blue-300'}`}
         >
           Users
         </button>
         <button
           onClick={() => setActiveTab('whatsapp')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'whatsapp' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'whatsapp' ? 'bg-blue-900' : 'bg-blue-300'}`}
         >
           WhatsApp
         </button>
         <button
           onClick={() => setActiveTab('stats')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'stats' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'stats' ? 'bg-blue-900' : 'bg-blue-300'}`}
         >
           Stats
         </button>
         <button
           onClick={() => setActiveTab('testimonial')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'testimonial' ? 'bg-[#0e185f]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'testimonial' ? 'bg-blue-900' : 'bg-blue-300'}`}
         >
           Testimonial
         </button>

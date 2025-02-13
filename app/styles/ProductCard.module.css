@@ -46,7 +46,7 @@
 }
 
 .productCard:hover h3 {
-  color: #0e185f;
+  color: linear-gradient(to right, #1e3a8a, #9333ea);
 }
 
 /* Product Details */
@@ -60,7 +60,7 @@
 /* Price Styling */
 .productCard .price {
   font-size: 1.2rem;
-  color: #0e185f;
+  color: linear-gradient(to right, #1e3a8a, #9333ea);
   font-weight: 700;
   margin: 10px 0;
 }
@@ -76,7 +76,7 @@
 
 /* Quantity Buttons */
 .cartControls button {
-  background-color: #0e185f;
+  background-color: linear-gradient(to right, #1e3a8a, #9333ea);
   color: white;
   border: none;
   padding: 10px 15px;

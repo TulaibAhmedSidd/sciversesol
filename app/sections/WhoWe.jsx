@@ -11,25 +11,16 @@ const AboutSection = () => {
             Who We Are
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            We are committed to providing innovative, reliable, and sustainable
-             energy solutions for residential and commercial properties. Our
-            team of experts ensures the best service, from consultation to
-            installation and beyond.
-          </p>
-          <a
-            href="#learn-more"
-            className="inline-block text-blue-600 font-semibold hover:text-blue-800 transition-all duration-300"
-          >
-            Learn More
-          </a>
+            At SciVerse, we specialize in delivering innovative, scalable, and high-performance software solutions tailored to your unique needs. From cutting-edge web and mobile applications to powerful backend systems, we transform ideas into reality with expertise and precision.          </p>
+
         </div>
 
         {/* Image Section */}
         <div className="w-full md:w-1/2" data-aos="fade-up" data-aos-delay="200">
           <img
-            src="/images/team.jpg"
+            src="/images/19197640_no_bg.png"
             alt="Our Team"
-            className="rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105"
+            className="rounded-lg transform transition-all duration-500 hover:scale-105"
           />
         </div>
       </div>
