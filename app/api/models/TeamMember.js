@@ -4,6 +4,7 @@ const TeamMemberSchema = new mongoose.Schema({
     role: { type: String, required: true },
     experience: { type: String, required: true },
     desc: { type: String, required: true },
+    desig: { type: String, required: true },
     img: { type: String, required: true },
 });
 

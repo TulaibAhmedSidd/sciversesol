@@ -13,6 +13,7 @@ import LogoutButton from "@components/LogoutButton";
 import { useAppSelector } from '@/app/store/store';
 import WhatsappTabScreen from './TabScreen/WhatsApp';
 import Testimonial from './TabScreen/Testimonial';
+import Teammember from './TabScreen/Teammember';
 
 const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('categories'); // Default tab is 'categories'
@@ -47,12 +48,12 @@ const AdminDashboard = () => {
         >
           Products
         </button> */}
-        {/* <button
-          onClick={() => setActiveTab('plan')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'plan' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
+        <button
+          onClick={() => setActiveTab('member')}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'member' ? 'bg-blue-900' : 'bg-blue-300'}`}
         >
-          Plan
-        </button> */}
+          Team member
+        </button>
         <button
           onClick={() => setActiveTab('users')}
           className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'users' ? 'bg-blue-900' : 'bg-blue-300'}`}
@@ -92,6 +93,9 @@ const AdminDashboard = () => {
 
       {activeTab === 'products' && (
         <ProductTabScreen />
+      )}
+      {activeTab === 'member' && (
+        <Teammember />
       )}
       {activeTab === 'plan' && (
         <PlanManagement />
