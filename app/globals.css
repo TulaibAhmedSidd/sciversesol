@@ -235,8 +235,8 @@ button:disabled {
 
 @media (max-width: 768px) {
   .logoCss {
-    height: 40px;
-    width: 200px;
+    height: 35px;
+    width: 185px;
   }
 
   .BottomLogo {
@@ -285,4 +285,32 @@ button:disabled {
   100% {
     content: "...";
   }
+}
+.hexagon-border {
+  position: relative;
+  width: 130px; /* w-24 in Tailwind */
+  height: 130px; /* h-24 in Tailwind */
+  background-color: transparent;
+  border: 1px solid lightgrey; /* Border applied to the wrapper */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Inset shadow */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  color: #9333ea;
+  font-size: 12px;
+  padding: 20px;
 }

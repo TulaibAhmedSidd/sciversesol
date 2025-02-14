@@ -14,6 +14,7 @@ import { useAppSelector } from '@/app/store/store';
 import WhatsappTabScreen from './TabScreen/WhatsApp';
 import Testimonial from './TabScreen/Testimonial';
 import Teammember from './TabScreen/Teammember';
+import ProjectManagement from './TabScreen/Projects';
 
 const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('member'); // Default tab is 'categories'
@@ -67,6 +68,12 @@ const AdminDashboard = () => {
           WhatsApp
         </button>
         <button
+          onClick={() => setActiveTab('Projects')}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'Projects' ? 'bg-blue-900' : 'bg-blue-300'}`}
+        >
+          Projects
+        </button>
+        <button
           onClick={() => setActiveTab('stats')}
           className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'stats' ? 'bg-blue-900' : 'bg-blue-300'}`}
         >
@@ -105,6 +112,9 @@ const AdminDashboard = () => {
       )}
       {activeTab === 'stats' && (
         <StatTabScreen />
+      )}
+      {activeTab === 'Projects' && (
+        <ProjectManagement />
       )}
       {activeTab === 'testimonial' && (
         <Testimonial />

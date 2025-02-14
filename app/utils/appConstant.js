@@ -45,15 +45,46 @@ export const constantApp = {
       "__v": 0
     }
   ],
-  teamember:[{
+  teamember: [{
     desig: 'Co Founder', name: "Ovais Uddin", role: "Mobile App Developer", experience: "8+ years", desc: "Expert in Flutter, React Native, and mobile software solutions.", img: "https://randomuser.me/api/portraits/men/1.jpg"
-},
-{ desig: 'Co Founder', name: "Tulaib Ahmed", role: "Software Engineer", experience: "5+ years", desc: "Specializes in web applications using React, Next.js, Vue, and more.", img: "https://randomuser.me/api/portraits/men/2.jpg" },
-{ desig: 'Co Founder', name: "Ghulam Murtaza", role: "Game Developer", experience: "5+ years", desc: "Provides mobile and desktop game solutions.", img: "https://randomuser.me/api/portraits/men/3.jpg" },
-{ desig: 'Co Founder', name: "Abdul Wahaj Shera", role: "Senior Backend Developer", experience: "5+ years", desc: "Expert in backend and database services.", img: "https://randomuser.me/api/portraits/men/4.jpg" },
-{ desig: 'Co Founder', name: "Danyal Zia", role: "Product & Project Coordinator", experience: "8+ years", desc: "Manages client relations, product, and project coordination.", img: "https://randomuser.me/api/portraits/men/6.jpg" },
-// { name: "Maaz Ahmed", role: "Principal Backend Developer & Client Relations", experience: "10+ years", desc: "Provides backend services and software solutions.", img: "https://randomuser.me/api/portraits/men/7.jpg" },
-{ desig: 'Co Founder', name: "Muhammad Mehmaam", role: "Senior Data Engineer, Analyst & Scientist", experience: "8+ years", desc: "Specializes in data analysis, data engineering, and predictive models.", img: "https://randomuser.me/api/portraits/men/8.jpg" },
-{ desig: 'Principle Designer', name: "Wasif Uddin", role: "Principal Designer", experience: "10+ years", desc: "Leads UI/UX design and all design services.", img: "https://randomuser.me/api/portraits/men/5.jpg" }]
-
+  },
+  { desig: 'Co Founder', name: "Tulaib Ahmed", role: "Software Engineer", experience: "5+ years", desc: "Specializes in web applications using React, Next.js, Vue, and more.", img: "https://randomuser.me/api/portraits/men/2.jpg" },
+  { desig: 'Co Founder', name: "Ghulam Murtaza", role: "Game Developer", experience: "5+ years", desc: "Provides mobile and desktop game solutions.", img: "https://randomuser.me/api/portraits/men/3.jpg" },
+  { desig: 'Co Founder', name: "Abdul Wahaj Shera", role: "Senior Backend Developer", experience: "5+ years", desc: "Expert in backend and database services.", img: "https://randomuser.me/api/portraits/men/4.jpg" },
+  { desig: 'Co Founder', name: "Danyal Zia", role: "Product & Project Coordinator", experience: "8+ years", desc: "Manages client relations, product, and project coordination.", img: "https://randomuser.me/api/portraits/men/6.jpg" },
+  // { name: "Maaz Ahmed", role: "Principal Backend Developer & Client Relations", experience: "10+ years", desc: "Provides backend services and software solutions.", img: "https://randomuser.me/api/portraits/men/7.jpg" },
+  { desig: 'Co Founder', name: "Muhammad Mehmaam", role: "Senior Data Engineer, Analyst & Scientist", experience: "8+ years", desc: "Specializes in data analysis, data engineering, and predictive models.", img: "https://randomuser.me/api/portraits/men/8.jpg" },
+  { desig: 'Principle Designer', name: "Wasif Uddin", role: "Principal Designer", experience: "10+ years", desc: "Leads UI/UX design and all design services.", img: "https://randomuser.me/api/portraits/men/5.jpg" }],
+  projects: [
+    {
+      title: "AI-Powered Analytics", description: "A deep learning-based analytics tool for business insights.",
+      link: 'www.fb.com',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7C7_tKnA2gXAwK_rFcHG2UWYqhurrfaNGTw&s",
+    },
+    {
+      title: "E-Commerce Platform", description: "A robust multi-vendor e-commerce solution.",
+      link: '',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdMZGDqxJuJ-vdnldZ26STLaXnU5o2uoqZw&s",
+    },
+    {
+      title: "Game Development", description: "An immersive 3D game for desktop and mobile.",
+      link: '',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmktaIOURN2fwe6G6qWF1pejraf2kPnjuUvQ&s",
+    },
+    {
+      title: "Fintech App", description: "A secure and intuitive fintech solution.",
+      link: '',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PiocXvj6vJpUtsGwld85yyiXMJiEPibdcw&s",
+    },
+    {
+      title: "Health & Fitness App", description: "A fitness tracking mobile application.",
+      link: '',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQirVzsozo39tg6RZv1pAHK2q5zFzyktFzzxQ&s",
+    },
+    {
+      title: "Real-Time Chat App", description: "A seamless chat and video conferencing app.",
+      link: '',
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiEGPKAf5W272fBFlJvfZ_jy7o3LABIGrnQ&s",
+    },
+  ]
 };
