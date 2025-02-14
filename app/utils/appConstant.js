@@ -44,6 +44,16 @@ export const constantApp = {
       "approved": true,
       "__v": 0
     }
-  ]
+  ],
+  teamember:[{
+    desig: 'Co Founder', name: "Ovais Uddin", role: "Mobile App Developer", experience: "8+ years", desc: "Expert in Flutter, React Native, and mobile software solutions.", img: "https://randomuser.me/api/portraits/men/1.jpg"
+},
+{ desig: 'Co Founder', name: "Tulaib Ahmed", role: "Software Engineer", experience: "5+ years", desc: "Specializes in web applications using React, Next.js, Vue, and more.", img: "https://randomuser.me/api/portraits/men/2.jpg" },
+{ desig: 'Co Founder', name: "Ghulam Murtaza", role: "Game Developer", experience: "5+ years", desc: "Provides mobile and desktop game solutions.", img: "https://randomuser.me/api/portraits/men/3.jpg" },
+{ desig: 'Co Founder', name: "Abdul Wahaj Shera", role: "Senior Backend Developer", experience: "5+ years", desc: "Expert in backend and database services.", img: "https://randomuser.me/api/portraits/men/4.jpg" },
+{ desig: 'Co Founder', name: "Danyal Zia", role: "Product & Project Coordinator", experience: "8+ years", desc: "Manages client relations, product, and project coordination.", img: "https://randomuser.me/api/portraits/men/6.jpg" },
+// { name: "Maaz Ahmed", role: "Principal Backend Developer & Client Relations", experience: "10+ years", desc: "Provides backend services and software solutions.", img: "https://randomuser.me/api/portraits/men/7.jpg" },
+{ desig: 'Co Founder', name: "Muhammad Mehmaam", role: "Senior Data Engineer, Analyst & Scientist", experience: "8+ years", desc: "Specializes in data analysis, data engineering, and predictive models.", img: "https://randomuser.me/api/portraits/men/8.jpg" },
+{ desig: 'Principle Designer', name: "Wasif Uddin", role: "Principal Designer", experience: "10+ years", desc: "Leads UI/UX design and all design services.", img: "https://randomuser.me/api/portraits/men/5.jpg" }]
 
 };

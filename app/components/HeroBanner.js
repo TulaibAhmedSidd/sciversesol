@@ -2,10 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import styles from "../styles/HeroBanner.module.css";
+import { useAppSelector } from "../store/store";
 
 const HeroBanner = () => {
   const [currentText, setCurrentText] = useState(0);
-
+  const {whatsAppNumber} = useAppSelector(state => state?.auth)
   const texts = [
     "Innovating the Future with Cutting-Edge Software Solutions!",
     "Building Scalable, Reliable, and Future-Ready Applications.",
@@ -23,11 +24,11 @@ const HeroBanner = () => {
   }, []);
 
   const handleWhatsAppRedirect = () => {
-    const message = `Hello, I want to know more about  Panels.`;
+    const message = `Hello, I want to know more about software services`;
 
     // Encode the message and create the WhatsApp URL
     const encodedMessage = encodeURIComponent(message);
-    const url = `https://wa.me/923032115055?text=${encodedMessage}`;
+    const url = `https://wa.me/${whatsAppNumber}?text=${encodedMessage}`;
 
     // Set the WhatsApp link
     window.location.href = url;

@@ -16,7 +16,7 @@ import Testimonial from './TabScreen/Testimonial';
 import Teammember from './TabScreen/Teammember';
 
 const AdminDashboard = () => {
-  const [activeTab, setActiveTab] = useState('categories'); // Default tab is 'categories'
+  const [activeTab, setActiveTab] = useState('member'); // Default tab is 'categories'
   const userdata = useAppSelector((state) => state?.auth?.userdata);
   console.log('userdata :', userdata)
   let username = userdata?.name

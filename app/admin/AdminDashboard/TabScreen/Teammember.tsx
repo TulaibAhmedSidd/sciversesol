@@ -6,7 +6,14 @@ import axios from 'axios';
 
 export default function TeamMemberManagement() {
   const [teamMembers, setTeamMembers] = useState([]);
-  const [newMember, setNewMember] = useState({ name: '', role: '', expertise: '' });
+  const [newMember, setNewMember] = useState({
+    name: '',
+    role: '',
+    experience: "",
+    desc: "",
+    desig: "",
+    img: "",
+  });
   const [loading, setLoading] = useState(false);
   const [editMode, setEditMode] = useState(false);
   const [editId, setEditId] = useState(null);
@@ -36,11 +43,16 @@ export default function TeamMemberManagement() {
     setLoading(true);
     try {
       if (editMode) {
-        await axios.patch('/api/teammember', { memberId: editId, updatedFields: newMember });
+        await axios.patch('/api/teammember', { memberId: editId, ...newMember });
       } else {
         await axios.post('/api/teammember', newMember);
       }
-      setNewMember({ name: '', role: '', expertise: '' });
+      setNewMember({ name: '',
+        role: '',
+        experience: "",
+        desc: "",
+        desig: "",
+        img: "" });
       setEditMode(false);
       setEditId(null);
       fetchTeamMembers();
@@ -52,7 +64,14 @@ export default function TeamMemberManagement() {
   };
 
   const handleEdit = (member) => {
-    setNewMember({ name: member.name, role: member.role, expertise: member.expertise });
+    setNewMember({ 
+      name:member?.name ||'',
+      role:member?.role ||'',
+      experience:member?.experience ||"",
+      desc:member?.desc ||"",
+      desig:member?.desig ||"",
+      img:member?.img ||"",
+     });
     setEditMode(true);
     setEditId(member._id);
   };
@@ -84,8 +103,20 @@ export default function TeamMemberManagement() {
           <input type="text" name="role" value={newMember.role} onChange={handleInputChange} placeholder="Enter role" className="p-2 w-full rounded-md border border-gray-300 mt-1 focus:ring-2 focus:ring-indigo-500" required />
         </div>
         <div>
-          <label htmlFor="expertise" className="block text-sm font-medium text-gray-700">Expertise</label>
-          <input type="text" name="expertise" value={newMember.expertise} onChange={handleInputChange} placeholder="Enter expertise" className="p-2 w-full rounded-md border border-gray-300 mt-1 focus:ring-2 focus:ring-indigo-500" required />
+          <label htmlFor="experience" className="block text-sm font-medium text-gray-700">Experience</label>
+          <input type="text" name="experience" value={newMember.experience} onChange={handleInputChange} placeholder="Enter expertise" className="p-2 w-full rounded-md border border-gray-300 mt-1 focus:ring-2 focus:ring-indigo-500" required />
+        </div>
+        <div>
+          <label htmlFor="desc" className="block text-sm font-medium text-gray-700">Description</label>
+          <input type="text" name="desc" value={newMember.desc} onChange={handleInputChange} placeholder="Enter Description" className="p-2 w-full rounded-md border border-gray-300 mt-1 focus:ring-2 focus:ring-indigo-500" required />
+        </div>
+        <div>
+          <label htmlFor="desig" className="block text-sm font-medium text-gray-700">Designation</label>
+          <input type="text" name="desig" value={newMember.desig} onChange={handleInputChange} placeholder="Enter Designation" className="p-2 w-full rounded-md border border-gray-300 mt-1 focus:ring-2 focus:ring-indigo-500" required />
+        </div>
+        <div>
+          <label htmlFor="img" className="block text-sm font-medium text-gray-700">img</label>
+          <input type="text" name="img" value={newMember.img} onChange={handleInputChange} placeholder="Enter img" className="p-2 w-full rounded-md border border-gray-300 mt-1 focus:ring-2 focus:ring-indigo-500" required />
         </div>
         <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md mt-4">{editMode ? 'Update' : 'Add'} Team Member</button>
       </form>
@@ -100,19 +131,25 @@ export default function TeamMemberManagement() {
             <tr>
               <th className="p-4 text-left">Name</th>
               <th className="p-4 text-left">Role</th>
-              <th className="p-4 text-left">Expertise</th>
+              <th className="p-4 text-left">Experience</th>
+              <th className="p-4 text-left">Description</th>
+              <th className="p-4 text-left">Designation</th>
+              <th className="p-4 text-left">Image</th>
               <th className="p-4 text-left">Actions</th>
             </tr>
           </thead>
           <tbody>
             {teamMembers.map((member) => (
               <tr key={member._id}>
-                <td className="p-4">{member.name}</td>
-                <td className="p-4">{member.role}</td>
-                <td className="p-4">{member.expertise}</td>
+                <td className="p-4">{member?.name}</td>
+                <td className="p-4">{member?.role}</td>
+                <td className="p-4">{member?.experience}</td>
+                <td className="p-4">{member?.desc}</td>
+                <td className="p-4">{member?.desig}</td>
+                <td className="p-4"><img src={member?.img} alt={member?.name} style={{width:'40px',height:'40px'}} /></td>
                 <td className="p-4">
-                  <button onClick={() => handleEdit(member)} className="bg-blue-500 text-white px-4 py-2 rounded-md mr-1">Edit</button>
-                  <button onClick={() => handleDelete(member._id)} className="bg-red-600 text-white px-4 py-2 rounded-md">Delete</button>
+                  <button onClick={() => handleEdit(member)} className="bg-blue-500 text-white px-4 py-2 w-full rounded-md mr-1">Edit</button>
+                  <button onClick={() => handleDelete(member?._id)} className="bg-red-600 text-white px-4 py-2 w-full rounded-md mt-1">Delete</button>
                 </td>
               </tr>
             ))}

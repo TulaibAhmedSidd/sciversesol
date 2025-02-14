@@ -15,8 +15,8 @@ export async function GET() {
 export async function POST(req) {
   await connectToDatabase();
   try {
-    const { name, role, experience, desc, img } = await req.json();
-    const newMember = new TeamMember({ name, role, experience, desc, img });
+    const { name, role, experience, desc, img ,desig} = await req.json();
+    const newMember = new TeamMember({ name, role, experience, desc, img ,desig});
     const savedMember = await newMember.save();
     return NextResponse.json(savedMember, { status: 201 });
   } catch (error) {
@@ -27,10 +27,10 @@ export async function POST(req) {
 export async function PATCH(req) {
   await connectToDatabase();
   try {
-    const { id, name, role, experience, desc, img } = await req.json();
+    const { memberId, name, role, experience, desc, img ,desig} = await req.json();
     const updatedMember = await TeamMember.findByIdAndUpdate(
-      id,
-      { name, role, experience, desc, img },
+      memberId,
+      { name, role, experience, desc, img,desig },
       { new: true }
     );
     if (!updatedMember) {
@@ -45,8 +45,8 @@ export async function PATCH(req) {
 export async function DELETE(req) {
   await connectToDatabase();
   try {
-    const { id } = await req.json();
-    const deletedMember = await TeamMember.findByIdAndDelete(id);
+    const { memberId } = await req.json();
+    const deletedMember = await TeamMember.findByIdAndDelete(memberId);
     if (!deletedMember) {
       return NextResponse.json({ error: 'Team member not found' }, { status: 404 });
     }

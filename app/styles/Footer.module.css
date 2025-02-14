@@ -70,8 +70,8 @@
   
   .newsletter button {
     padding: 10px 20px;
-    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
-    color: #333;
+    background: linear-gradient(to right, #1e3a8a, #9333ea);
+    color: #fff;
     border: none;
     border-radius: 4px;
     font-weight: bold;

@@ -130,54 +130,56 @@ export default function WhatsAppNumbers() {
         </button>
       </form>
       <div className="flex gap-2 items-center mt-8 mb-4">
-          <h3 className="text-xl font-semibold ">WhatsApp Numbers List</h3>
-          <RefreshButton onClick={fetchNumbers} />
-        </div>
+        <h3 className="text-xl font-semibold ">WhatsApp Numbers List</h3>
+        <RefreshButton onClick={fetchNumbers} />
+      </div>
       {/* Numbers List */}
-      <table className="w-full border">
-        <thead>
-          <tr className="bg-gray-200">
-            <th className="border p-2 text-left">Number</th>
-            <th className="border p-2 text-left">Primary</th>
-            <th className="border p-2 text-left">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {loading ? (
-            <tr>
-              <td colSpan="3" className="text-center p-4">
-                <Loading />
-              </td>
+      <div className="overflow-x-auto">
+        <table className="min-w-full border ">
+          <thead>
+            <tr className="bg-gray-200">
+              <th className="border p-2 text-left">Number</th>
+              <th className="border p-2 text-left">Primary</th>
+              <th className="border p-2 text-left">Actions</th>
             </tr>
-          ) : numbers.length === 0 ? (
-            <tr>
-              <td colSpan="3" className="text-center p-4">No numbers available.</td>
-            </tr>
-          ) : (
-            numbers?.map((num) => (
-              <tr key={num?._id} className="border-t">
-                <td className="p-2">{num?.WhatsAppNumber}</td>
-                <td className="p-2">{num?.makePrimary ? "Yes" : "No"}</td>
-                <td className="p-2 flex gap-2">
-                  <button
-                    className="bg-blue-500 text-white px-3 py-1 rounded"
-                    onClick={() => setPrimary(num)}
-                  >
-                    Set Primary
-                  </button>
-                  <button
-                    disabled={num?.makePrimary}
-                    className="bg-red-500 text-white px-3 py-1 rounded"
-                    onClick={() => handleDeleteNum(num?._id)}
-                  >
-                    Delete
-                  </button>
+          </thead>
+          <tbody>
+            {loading ? (
+              <tr>
+                <td colSpan="3" className="text-center p-4">
+                  <Loading />
                 </td>
               </tr>
-            ))
-          )}
-        </tbody>
-      </table>
+            ) : numbers.length === 0 ? (
+              <tr>
+                <td colSpan="3" className="text-center p-4">No numbers available.</td>
+              </tr>
+            ) : (
+              numbers?.map((num) => (
+                <tr key={num?._id} className="border-t">
+                  <td className="p-2">{num?.WhatsAppNumber}</td>
+                  <td className="p-2">{num?.makePrimary ? "Yes" : "No"}</td>
+                  <td className="p-2 flex gap-2">
+                    <button
+                      className="bg-blue-500 text-white px-3 py-1 rounded"
+                      onClick={() => setPrimary(num)}
+                    >
+                      Set Primary
+                    </button>
+                    <button
+                      disabled={num?.makePrimary}
+                      className="bg-red-500 text-white px-3 py-1 rounded"
+                      onClick={() => handleDeleteNum(num?._id)}
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

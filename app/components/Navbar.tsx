@@ -1,82 +1,3 @@
-// 'use client'
-// import { useState, useEffect } from 'react';
-// import styles from '../styles/Navbar2.module.css';
-// import { useRouter } from 'next/navigation';
-// import { useAppSelector } from '../store/store';
-
-// export default function Navbar() {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const [cartCount, setCartCount] = useState(0);
-//   const router = useRouter();
-
-//   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-//   const updateCartCount = () => {
-//     const cartItems: any = localStorage.getItem('cart');
-//     const parsedCartItems = cartItems ? JSON.parse(cartItems) : [];
-//     setCartCount(parsedCartItems.length);
-//   };
-
-//   // Update the cart count when the component mounts or cart changes
-//   useEffect(() => {
-//     updateCartCount();
-
-//     // Optional: Listen for localStorage changes and update cart count dynamically
-//     const handleStorageChange = () => updateCartCount();
-//     window.addEventListener('storage', handleStorageChange);
-
-//     return () => {
-//       window.removeEventListener('storage', handleStorageChange);
-//     };
-//   }, []);
-
-//   const handleCartClick = () => {
-//     // Redirect to cart page
-//     router.push('/cart');
-//   };
-
-//   const handleScrollToSection = (section: any) => {
-//     // Redirect to the root of the site first
-//     window.location.href = '/';
-
-//     // Use setTimeout to allow for page load and then scroll to the section
-//     setTimeout(() => {
-//       const element = document.getElementById(section);
-//       if (element) {
-//         element.scrollIntoView({ behavior: 'smooth' });
-//       }
-//     }, 0); // Ensures the scroll happens after the page load
-//   };
-
-//   const { initialName } = useAppSelector(state => state?.example)
-
-//   console.log("initialName", initialName);
-
-//   return (
-//     <header className={styles.header}>
-//       <div className={styles.logo}>Sciverse </div>
-//       <button className={styles.menuToggle} onClick={toggleMenu}>
-//         ☰
-//       </button>
-//       <nav className={styles.navbar}>
-//         <ul className={isMenuOpen ? `${styles.navList} ${styles.show}` : styles.navList}>
-//           <li><a href="#home" onClick={(e) => { e.preventDefault(); handleScrollToSection('home'); }}>Home</a></li>
-//           <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToSection('about'); }}>About Us</a></li>
-//           <li><a href="#services" onClick={(e) => { e.preventDefault(); handleScrollToSection('services'); }}>Services</a></li>
-//           <li><a href="#projects" onClick={(e) => { e.preventDefault(); handleScrollToSection('projects'); }}>Projects</a></li>
-//           <li><a href="#contact" onClick={(e) => { e.preventDefault(); handleScrollToSection('contact'); }}>Contact</a></li>
-//           <li><a href="#quote" onClick={(e) => { e.preventDefault(); handleScrollToSection('quote'); }} className={styles.cta}>Get a Quote</a></li>
-//           <li><a href="/products">Products</a></li>
-//           <li><a href="/plans">Plans</a></li>
-//           <li className={styles.cartIcon} onClick={handleCartClick}>
-//             🛒 <span className={styles.cartCount}>{cartCount}</span>
-//           </li>
-//         </ul>
-//       </nav>
-//     </header>
-//   );
-// }
-
 "use client";
 import { useState, useEffect } from "react";
 import styles from "../styles/Navbar2.module.css";
@@ -262,7 +183,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#projects"
+              href="/projects"
               onClick={(e) => {
                 handleScrollToSection("projects");
               }}

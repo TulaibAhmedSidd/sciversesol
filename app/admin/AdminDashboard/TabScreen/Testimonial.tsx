@@ -48,9 +48,9 @@ const TestimonialTabScreen = ({ isAdmin }: { isAdmin: boolean }) => {
     }
   };
 
-  const handleApprove = async (id: string) => {
+  const handleApprove = async (id: string,statusBool:boolean) => {
     try {
-      await axios.patch(`/api/testimonial/${id}`, { approved: false });
+      await axios.patch(`/api/testimonial/${id}`, { approved: statusBool });
       fetchTestimonials(); // Refresh list
     } catch (error) {
       console.error("Error approving testimonial:", error);
@@ -131,7 +131,7 @@ const TestimonialTabScreen = ({ isAdmin }: { isAdmin: boolean }) => {
               <p className="text-gray-500">— {t.author}</p>
               {/* {isAdmin && ( */}
               <button
-                onClick={() => handleApprove(t._id)}
+                onClick={() => handleApprove(t._id,true)}
                 className="mt-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
               >
                 Approve
@@ -156,7 +156,7 @@ const TestimonialTabScreen = ({ isAdmin }: { isAdmin: boolean }) => {
               <p className="text-gray-800">{t.text}</p>
               <p className="text-gray-500">— {t.author}</p>
               <button
-                onClick={() => handleApprove(t._id)}
+                onClick={() => handleApprove(t._id,false)}
                 className="mt-2 px-4 py-2  text-red-900 rounded-lg hover:bg-red-300"
               >
                 Reject
