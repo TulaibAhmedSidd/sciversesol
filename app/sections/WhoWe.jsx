@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 text-center md:text-left flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
         {/* Text Section */}
         <div className="w-full md:w-1/2" data-aos="fade-up">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="fancy-heading" data-aos="fade-up">
             Who We Are
           </h2>
           <p className="text-lg text-gray-700 mb-6">
