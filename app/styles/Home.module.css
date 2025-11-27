@@ -1,5 +1,5 @@
 .cta {
-  background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+  background-color: linear-gradient(to right, #ebb35b, #e7c282);
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -27,7 +27,7 @@
 .heroButtons a {
   padding: 12px 24px;
   margin: 10px;
-  background: linear-gradient(to right, #1e3a8a, #9333ea);
+  background: linear-gradient(to right, #ebb35b, #e7c282);
   color: white;
   border-radius: 5px;
 }
@@ -134,7 +134,7 @@
 /* Services Section */
 .services {
   padding: 40px;
-  background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+  background-color: linear-gradient(to right, #ebb35b, #e7c282);
   color: white;
   text-align: center;
 }
@@ -162,7 +162,7 @@
 }
 
 .card h3 {
-  color: linear-gradient(to right, #1e3a8a, #9333ea);
+  color: linear-gradient(to right, #ebb35b, #e7c282);
 }
 
 /* Testimonials Section */
@@ -193,14 +193,14 @@
 /* Call-to-Action Section */
 .cta {
   padding: 40px;
-  background: linear-gradient(to right, #1e3a8a, #9333ea);
+  background: linear-gradient(to right, #ebb35b, #e7c282);
   color: white;
   text-align: center;
 }
 
 .ctaButton {
   padding: 12px 24px;
-  background: linear-gradient(to right, #1e3a8a, #9333ea);
+  background: linear-gradient(to right, #ebb35b, #e7c282);
   color: white;
   font-weight: bold;
   border-radius: 5px;

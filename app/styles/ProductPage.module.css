@@ -13,7 +13,7 @@
   }
   
   .productCard button {
-    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+    background-color: linear-gradient(to right, #ebb35b, #e7c282);
     color: white;
     padding: 10px;
     border: none;
@@ -22,14 +22,14 @@
   }
   
   .productCard button:hover {
-    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+    background-color: linear-gradient(to right, #ebb35b, #e7c282);
   }
   
   .cartButton {
     display: inline-block;
     margin-top: 20px;
     padding: 12px;
-    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+    background-color: linear-gradient(to right, #ebb35b, #e7c282);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -79,9 +79,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color: linear-gradient(to right, #1e3a8a, #9333ea);
+    color: linear-gradient(to right, #ebb35b, #e7c282);
     margin-bottom: 20px;
-    border-bottom: 2px solid linear-gradient(to right, #1e3a8a, #9333ea);
+    border-bottom: 2px solid linear-gradient(to right, #ebb35b, #e7c282);
     width: max-content;
     padding-bottom: 5px;
     text-align: left;
@@ -128,7 +128,7 @@
   }
   
   .productCard button {
-    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+    background-color: linear-gradient(to right, #ebb35b, #e7c282);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -139,6 +139,6 @@
   }
   
   .productCard button:hover {
-    background-color: linear-gradient(to right, #1e3a8a, #9333ea);
+    background-color: linear-gradient(to right, #ebb35b, #e7c282);
   }
   

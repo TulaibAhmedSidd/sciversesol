@@ -33,19 +33,19 @@ const AdminDashboard = () => {
       <div className="flex flex-col mb-6 flex-wrap justify-evenly gap-1 align-top w-full md:flex-row">
         {/* <button
           onClick={() => setActiveTab('categories')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'categories' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'categories' ? 'bg-[linear-gradient(to right, #ebb35b, #e7c282)]' : 'bg-blue-300'}`}
         >
           Product Categories
         </button> */}
         {/* <button
           onClick={() => setActiveTab('brands')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'brands' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'brands' ? 'bg-[linear-gradient(to right, #ebb35b, #e7c282)]' : 'bg-blue-300'}`}
         >
           Brands
         </button>
         <button
           onClick={() => setActiveTab('products')}
-          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'products' ? 'bg-[linear-gradient(to right, #1e3a8a, #9333ea)]' : 'bg-blue-300'}`}
+          className={` flex-1 w-full px-4 py-2 rounded-md text-white ${activeTab === 'products' ? 'bg-[linear-gradient(to right, #ebb35b, #e7c282)]' : 'bg-blue-300'}`}
         >
           Products
         </button> */}

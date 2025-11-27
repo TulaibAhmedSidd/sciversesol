@@ -274,7 +274,7 @@ export default function Products() {
             <button
               disabled={page === 1}
               onClick={() => setPage(page - 1)}
-              className="bg-[linear-gradient(to right, #1e3a8a, #9333ea)] text-white px-4 py-2 mx-2 rounded disabled:opacity-50"
+              className="bg-[linear-gradient(to right, #ebb35b, #e7c282)] text-white px-4 py-2 mx-2 rounded disabled:opacity-50"
             >
               Previous
             </button>
@@ -282,7 +282,7 @@ export default function Products() {
             <button
               disabled={page === totalPages}
               onClick={() => setPage(page + 1)}
-              className="bg-[linear-gradient(to right, #1e3a8a, #9333ea)] text-white px-4 py-2 mx-2 rounded disabled:opacity-50"
+              className="bg-[linear-gradient(to right, #ebb35b, #e7c282)] text-white px-4 py-2 mx-2 rounded disabled:opacity-50"
             >
               Next
             </button>

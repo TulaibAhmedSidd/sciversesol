@@ -125,11 +125,11 @@ export default function Navbar() {
         }}
       >
         <img
-          src="/images/logowhite.png"
-          alt="Sciverse "
+          src="/images/nobg.png"
+          alt="TAS Servies "
           className="logoCss"
         />
-        {/* Sciverse  */}
+        {/* TAS Servies  */}
       </div>
       <div
         className={styles.menuToggle}

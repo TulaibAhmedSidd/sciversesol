@@ -87,7 +87,7 @@
 }
 
 .learnMore {
-  background: linear-gradient(to right, #1e3a8a, #9333ea);
+  background: linear-gradient(to right, #ebb35b, #e7c282);
   /* Smooth gradient */
   color: white;
   padding: 12px 25px;
@@ -100,7 +100,7 @@
 }
 
 .learnMore:hover {
-  background: linear-gradient(to right, #9333ea, #1e3a8a);
+  background: linear-gradient(to right, #e7c282, #ebb35b);
   /* Reversed gradient on hover */
   transform: translateY(-5px);
   /* Slight lift on hover */

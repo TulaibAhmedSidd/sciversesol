@@ -74,7 +74,7 @@ const ContactUs = () => {
 
                     <button
                         type="submit"
-                        className="w-full py-3 px-6 bg-[linear-gradient(to right, #1e3a8a, #9333ea)] text-white rounded-md font-semibold shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full py-3 px-6 bg-[linear-gradient(to right, #ebb35b, #e7c282)] text-white rounded-md font-semibold shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                         Send Message
                     </button>

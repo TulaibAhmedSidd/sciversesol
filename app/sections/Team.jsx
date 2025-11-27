@@ -50,9 +50,9 @@ const Team = () => {
                                 <img src={member.img} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
                                 <CardContent>
                                     <h3 className="text-2xl font-semibold mb-1">{member.name}</h3>
-                                    <p className="text-sm font-semibold text-[#9333ea] mb-2">{member.desig} </p>
+                                    <p className="text-sm font-semibold text-[#e7c282] mb-2">{member.desig} </p>
                                     <p className="text-lg font-semibold ">{member.role} ({member.experience})</p>
-                                    <p className='text-[#1e3a8a]'>{member.desc}</p>
+                                    <p className='text-[#ebb35b]'>{member.desc}</p>
                                 </CardContent>
                             </div>
                         ))}

@@ -16,7 +16,7 @@ export default function Footer() {
           <p>Phone 3: +92 348 1333766</p>
           <p>Phone 3: +92 332 8238048</p>
           <p>Phone 3: +92 335 2614032</p>
-          <p>Email: <a href="mailto:ahsidtullu@gmail.com">Sciverse@gmail.com</a></p>
+          <p>Email: <a href="mailto:ahsidtullu@gmail.com">taservies@gmail.com</a></p>
         </div>
 
         {/* Navigation Links */}
@@ -42,7 +42,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className={styles.footerBottom}>
-        <p>&copy; 2022 Sciverse . All rights reserved.</p>
+        <p>&copy; 2022 TAS Servies . All rights reserved.</p>
       </div>
     </footer>
   );

@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sciverse Software Solution</title>
+        <title>TAS Servies Software Solution</title>
         <meta
-          name="Sciverse Software Solution"
+          name="TAS Servies Software Solution"
           content="A Software company for all tech solution "
         />
         <link rel="icon" href="/favicon.ico" />
@@ -32,8 +32,8 @@ export default function Home() {
 
       <div className=" text-center w-full flex justify-center my-[100px]">
         <img
-          src="/images/biglogo.png"
-          alt="Sciverse "
+          src="/images/nobg.png"
+          alt="TAS Servies "
           className="bottom-logo w-auto h-auto max-w-full px-5"
         />
       </div>

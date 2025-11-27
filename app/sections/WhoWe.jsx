@@ -11,14 +11,14 @@ const AboutSection = () => {
             Who We Are
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            At SciVerse, we specialize in delivering innovative, scalable, and high-performance software solutions tailored to your unique needs. From cutting-edge web and mobile applications to powerful backend systems, we transform ideas into reality with expertise and precision.          </p>
+            At TAS Servies, we specialize in delivering innovative, scalable, and high-performance software solutions tailored to your unique needs. From cutting-edge web and mobile applications to powerful backend systems, we transform ideas into reality with expertise and precision.          </p>
 
         </div>
 
         {/* Image Section */}
         <div className="w-full md:w-1/2" data-aos="fade-up" data-aos-delay="200">
           <img
-            src="/images/19197640_no_bg.png"
+            src="/images/team.jpg"
             alt="Our Team"
             className="rounded-lg transform transition-all duration-500 hover:scale-105"
           />
